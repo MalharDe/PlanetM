@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+  
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <script src="../JS/script.js"></script>
+  <link rel="stylesheet" href="../SCSS/styles.css">
+  
+</head>
+<body>
+    <!-- ----------------Nav bar --------------------------- -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <a class="navbar-brand" href="#">
+        <img src="https://img.icons8.com/cute-clipart/128/000000/music.png" width="30" height="30"
+          class="d-inline-block align-top" alt="">
+        PlanetM
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./Home.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <div class="dropdown">
+            <span>Languages</span>
+            <div class="dropdown-content">
+              <a id="english" href="#">English</a>
+              <a id="marathi" href="#">Marathi</a>
+              <a id="hindi" href="#">Hindi</a>
+            </div>
+          </div>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" id="searchkey">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+          <div class="profileImage"></div>
+          <div class="menu-dropdown">
+            <img src="../Assets/Images/menu.jfif" alt="">
+            <div class="menu-content">
+              <a href="password.html">Edit Profile</a>
+              <a href="Login.html" id="login">Login</a>
+              <a onclick="Logout()" id="logout" href="#">Logout</a>
+            </div>
+          </div>
+  
+        </form>
+  
+      </div>
+    </nav>
+  <!--  The main-page class covers the whole page(Left-side + main-content + right-side) except
+        Navbar -->
+  <!-- ------------------------   Main Content    -------------------------------- -->
+  <!-- Vertical navbar -->
+  <div class="vertical-nav bg-white" id="sidebar">
+    <div class="py-4 px-3 mb-4 bg-light">
+      <div class="media d-flex align-items-center">
+
+        <div class="profile-images1" >
+
+
+        </div>
+
+        <div class="profile-name1">
+
+        </div>
+        
+      </div>
+      <div class="media-body pt-3">
+        <div class="custom-file">
+          <label for="fileupload" class="text-gray font-weight-bold text-uppercase small pb-2 mb-0">Change
+            Profile</label>
+          <input type="file" id="fileupload">
+          <button id="imgBtn" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4">Upload Image</button>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Account Settings</p>
+
+    <ul class="nav flex-column bg-white mb-0">
+      <!-- <li class="nav-item">
+        <a href="#" class="nav-link text-dark font-italic bg-light">
+          <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
+          Home
+        </a> -->
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link text-dark font-italic bg-light edit-link" id="editProfile">
+          <i class="fa fa-address-card mr-3 text-primary fa-fw "></i>
+          Edit Profile
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link text-dark font-italic bg-light pwd-link" id="changePassword">
+          <i class="fa fa-cubes mr-3 text-primary fa-fw"></i>
+          Change Password
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- End vertical navbar -->
+
+
+  <!-- Page content holder -->
+  <div class="page-content pt-1 px-4" id="content">
+    <!-- Demo content -->
+    <h2 class="display-5 mt-3" style="color: rgb(69, 69, 243);">Profile Settings</h2>
+  
+    <div class="separator"></div>
+    <div class="row row1 text-black">
+      <div class="col-lg" id="editProfileDiv">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="Name">First name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your first name" style="border-radius: 1rem;">
+              <span class="error" id="fname"><sup>*</sup>Name require at least 3 letter</span>
+            </div>
+          </div>
+        </div>
+          <!-- <div class="col-md-6">
+            <div class="form-group">
+              <label for="Name">Last Name</label>
+              <input type="text" class="form-inline" placeholder="Enter your last name" style="border-radius: 5px;">
+            </div>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="Name">Email-id</label>
+              <input type="text" class="form-control" placeholder="Enter your Email-id" style="border-radius: 5px;">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="Name">Username</label>
+              <input type="text" class="form-control" placeholder="Enter your username" style="border-radius: 5px;">
+            </div>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="Name">Phone No.</label>
+              <input type="text" class="form-control" placeholder="Enter your contact no." style="border-radius: 5px;">
+            </div>
+          </div>
+        </div> -->
+        <br><br><br><br>
+        <div class="row mt-3">
+          <!-- <div class="col-md-6"> -->
+            <div class="form-group">
+              <button id="namebtn" class="btn btn-primary ml-3">Update</button>
+              <button type="reset" class="btn btn-primary ml-2">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!----------------------------- Password div----------------------- -->
+        <div class="col-lg" id="passwordDiv">
+          <div class="row" >
+            <div class="col-md-6 mt-2 mb-2">
+              <div class="form-group">
+                <label for="Name">Current Password</label>
+                <input type="password" id="userPassword" class="form-control" style="border-radius: 1rem;">
+                <!-- <span class="error" id="fname"><sup>*</sup>Please Enter Current Password</span> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-2">
+              <div class="form-group">
+                <label for="Name">New Password</label>
+                <input type="password" id="newPassword"  class="form-control" minlength="8" style="border-radius: 1rem;" required>
+                <span class="error" id="password1"><sup>*</sup>Password must contain alphabets, number and special
+                  symbol</span>
+              </div>
+          </div>
+          </div>
+           
+          <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="Name">Confirm Password</label>
+                  <input type="password" id="confirmPass" class="form-control" style="border-radius: 1rem;" required>
+                </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <button class="btn btn-primary" id="editPassbtn">Update</button>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

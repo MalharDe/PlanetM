@@ -1,0 +1,634 @@
+{
+  "music": [
+    {
+      "id": 1,
+      "url": "../Assets/Audios/music1.mp3",
+      "name": "Main Jis Din Bhula Di",
+      "language": "hindi",
+      "img": "https://sklktecdnems06.cdnsrv.jio.com/c.saavncdn.com/947/Main-Jis-Din-Bhulaa-Du-Hindi-2021-20210210191001-150x150.jpg?bch=450419",
+      "artist": "Tulsi Kumar",
+      "category": "bollywood",
+      "artistName": "Tulsi Kumar"
+    },
+    {
+      "id": 2,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Ghungroo",
+      "language": "hindi",
+      "img": "https://c.saavncdn.com/881/War-Hindi-2019-20191001104931-150x150.jpg",
+      "artist": "arijitsingh",
+      "category": "bollywood",
+      "artistName": "Arijit Singh"
+    },
+    {
+      "id": 3,
+      "url": "../Assets/Audios/music1.mp3",
+      "name": "Teri Mitti",
+      "language": "hindi",
+      "img": "https://c.saavncdn.com/693/Kesari-Hindi-2019-20200605001133-150x150.jpg",
+      "artist": "B Praak",
+      "category": "bollywood",
+      "artistName": "B Praak"
+    },
+    {
+      "id": 4,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Faded",
+      "language": "english",
+      "img": "https://sklktcdnems07.cdnsrv.jio.com/c.saavncdn.com/981/Faded-English-2015-150x150.jpg",
+      "artist": "Eminem",
+      "category": "rock",
+      "artistName": "Eminem"
+    },
+    {
+      "id": 5,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Believer-IG",
+      "language": "english",
+      "img": "https://sklktcdnems07.cdnsrv.jio.com/c.saavncdn.com/248/Evolve-English-2017-20180716230950-150x150.jpg",
+      "artist": "Ed Sheeran",
+      "category": "jazz",
+      "artistName": "Ed Sheeran"
+    },
+    {
+      "id": 6,
+      "url": "../Assets/Audios/music1.mp3",
+      "name": "Lay Ship",
+      "language": "english",
+      "img": "https://sklktecdnems04.cdnsrv.jio.com/c.saavncdn.com/270/Sheep-Alan-Walker-Relift--English-2018-20180831114031-150x150.jpg",
+      "artist": "Elton John",
+      "category": "classical",
+      "artistName": "Elton John"
+    },
+    {
+      "id": 7,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Shape Of You",
+      "language": "english",
+      "img": "https://snoidcdnems03.cdnsrv.jio.com/c.saavncdn.com/694/Shape-of-You-Single-English-2017-150x150.jpg",
+      "artist": "jayz",
+      "category": "rock",
+      "artistName": "Jay Z"
+    },
+    {
+      "id": 8,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Alone",
+      "language": "english",
+      "img": "https://snoidcdnems01.cdnsrv.jio.com/c.saavncdn.com/522/Alone-English-2017-20180131085202-150x150.jpg",
+      "artist": "jayz",
+      "category": "jazz",
+      "artistName": "Jay Z"
+    },
+    {
+      "id": 9,
+      "url": "../Assets/Audios/music1.mp3",
+      "name": "Kun Faya Kun",
+      "language": "hindi",
+      "img": "https://sklktecdnems03.cdnsrv.jio.com/c.saavncdn.com/274/Rockstar-2011-150x150.jpg",
+      "artist": "arrahman",
+      "category": "bollywood",
+      "artistName": "A R Rahman"
+    },
+    {
+      "id": 10,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Dil Bechara",
+      "language": "hindi",
+      "img": "https://sklktecdnems01.cdnsrv.jio.com/c.saavncdn.com/870/Dil-Bechara-Hindi-2020-20200709070438-150x150.jpg",
+      "artist": "arrahman",
+      "category": "bollywood",
+      "artistName": "A R Rahman"
+    },
+    {
+      "id": 11,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Muqabla2.0",
+      "language": "hindi",
+      "img": "https://sklktcdnems01.cdnsrv.jio.com/c.saavncdn.com/088/Street-Dancer-3D-Hindi-2020-20200225074106-150x150.jpg",
+      "artist": "arrahman",
+      "category": "bollywood",
+      "artistName": "A R Rahman"
+    },
+    {
+      "id": 12,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Samjhavaan",
+      "language": "hindi",
+      "img": "https://sgdccdnems03.cdnsrv.jio.com/c.saavncdn.com/540/Humpty-Sharma-Ki-Dulhania-Hindi-2014-20190618095042-150x150.jpg",
+      "artist": "sghoshal",
+      "category": "bollywood",
+      "artistName": "Shreya Ghoshal"
+    },
+    {
+      "id": 13,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Neenaade",
+      "language": "hindi",
+      "img": "https://sgdccdnems04.cdnsrv.jio.com/c.saavncdn.com/085/Yuvarathnaa-Kannada--Kannada-2021-20210312094439-150x150.jpg",
+      "artist": "sghoshal",
+      "category": "bollywood",
+      "artistName": "Shreya Ghoshal"
+    },
+    {
+      "id": 14,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Teri Meri",
+      "language": "hindi",
+      "img": "https://sgdccdnems04.cdnsrv.jio.com/c.saavncdn.com/667/Bodyguard-2011-150x150.jpg",
+      "artist": "sghoshal",
+      "category": "bollywood",
+      "artistName": "Shreya Ghoshal"
+    },
+    {
+      "id": 15,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Tere Liye",
+      "language": "hindi",
+      "img": "https://sgdccdnems01.cdnsrv.jio.com/c.saavncdn.com/938/Prince-Hindi-2010-20190612124629-150x150.jpg",
+      "artist": "sghoshal",
+      "category": "bollywood",
+      "artistName": "Shreya Ghoshal"
+    },
+    {
+      "id": 16,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Piya O Re Piya",
+      "language": "hindi",
+      "img": "https://sgdccdnems03.cdnsrv.jio.com/c.saavncdn.com/904/Tere-Naal-Love-Ho-Gaya-Hindi-2011-20190612124629-150x150.jpg",
+      "artist": "sghoshal",
+      "category": "bollywood",
+      "artistName": "Shreya Ghoshal"
+    },
+    {
+      "id": 17,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Tere Sang Yaara",
+      "language": "hindi",
+      "img": "https://sgdccdnems03.cdnsrv.jio.com/c.saavncdn.com/221/Rustom-Hindi-2018-20191029174008-150x150.jpg",
+      "artist": "atifaslam",
+      "category": "bollywood",
+      "artistName": "Atif Aslam"
+    },
+    {
+      "id": 18,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Dekhte Dekhte",
+      "language": "hindi",
+      "img": "https://sklktecdnems04.cdnsrv.jio.com/c.saavncdn.com/418/Batti-Gul-Meter-Chalu-Hindi-2018-20180908134024-150x150.jpg",
+      "artist": "atifaslam",
+      "category": "bollywood",
+      "artistName": "Atif Aslam"
+    },
+    {
+      "id": 19,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Khairiyat",
+      "language": "hindi",
+      "img": "https://sklktecdnems03.cdnsrv.jio.com/c.saavncdn.com/937/Chhichhore-Hindi-2019-20190904104023-150x150.jpg",
+      "artist": "atifaslam",
+      "category": "bollywood",
+      "artistName": "Atif Aslam"
+    },
+    {
+      "id": 20,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Devak Kalji Re",
+      "language": "marathi",
+      "img": "https://sgdccdnems04.cdnsrv.jio.com/c.saavncdn.com/461/Redu-Marathi-2017-20180502-150x150.jpg",
+      "artist": "ajayatul",
+      "category": "bollywood",
+      "artistName": "Ajay Atul"
+    },
+    {
+      "id": 21,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Morya Morya",
+      "language": "marathi",
+      "img": "https://sgdccdnems02.cdnsrv.jio.com/c.saavncdn.com/673/Uladhaal-Marathi-2008-150x150.jpg",
+      "artist": "ajayatul",
+      "category": "bollywood",
+      "artistName": "Ajay Atul"
+    },
+    {
+      "id": 22,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Natarang",
+      "language": "marathi",
+      "img": "https://sklktcdnems01.cdnsrv.jio.com/c.saavncdn.com/575/Natarang-Marathi-2010-20170921053253-150x150.jpg",
+      "artist": "arrahman",
+      "category": "bollywood",
+      "artistName": "A R Rahman"
+    },
+    {
+      "id": 23,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Bedhund",
+      "language": "marathi",
+      "img": "https://sklktcdnems02.cdnsrv.jio.com/c.saavncdn.com/217/Bedhund-2003-150x150.jpg",
+      "artist": "arrahman",
+      "category": "bollywood",
+      "artistName": "A R Rahman"
+    },
+    {
+      "id": 24,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Baavre",
+      "language": "marathi",
+      "img": "https://sklktecdnems01.cdnsrv.jio.com/c.saavncdn.com/870/Dil-Bechara-Hindi-2020-20200709070438-150x150.jpg",
+      "artist": "arrahman",
+      "category": "bollywood",
+      "artistName": "A R Rahman"
+    },
+    {
+      "id": 25,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Baavre",
+      "language": "marathi",
+      "img": "https://sklktecdnems01.cdnsrv.jio.com/c.saavncdn.com/870/Dil-Bechara-Hindi-2020-20200709070438-150x150.jpg",
+      "artist": "arrahman",
+      "category": "bollywood",
+      "artistName": "A R Rahman"
+    },
+    {
+      "id": 26,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Baavre",
+      "language": "marathi",
+      "img": "https://sklktecdnems01.cdnsrv.jio.com/c.saavncdn.com/870/Dil-Bechara-Hindi-2020-20200709070438-150x150.jpg",
+      "artist": "arrahman",
+      "category": "bollywood",
+      "artistName": "A R Rahman"
+    },
+    {
+      "id": 27,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Baavre",
+      "language": "marathi",
+      "img": "https://sklktecdnems01.cdnsrv.jio.com/c.saavncdn.com/870/Dil-Bechara-Hindi-2020-20200709070438-150x150.jpg",
+      "artist": "arrahman",
+      "category": "bollywood",
+      "artistName": "A R Rahman"
+    },
+    {
+      "id": 28,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Baavre",
+      "language": "marathi",
+      "img": "https://sklktecdnems01.cdnsrv.jio.com/c.saavncdn.com/870/Dil-Bechara-Hindi-2020-20200709070438-150x150.jpg",
+      "artist": "arrahman",
+      "category": "bollywood",
+      "artistName": "A R Rahman"
+    },
+    {
+      "id": 29,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Baavre",
+      "language": "marathi",
+      "img": "https://sklktecdnems01.cdnsrv.jio.com/c.saavncdn.com/870/Dil-Bechara-Hindi-2020-20200709070438-150x150.jpg",
+      "artist": "arrahman",
+      "category": "bollywood",
+      "artistName": "A R Rahman"
+    },
+    {
+      "id": 30,
+      "url": "../Assets/Audios/music1.mp3",
+      "name": "Main Jis Din Bhula Di",
+      "language": "hindi",
+      "img": "https://sgdccdnems04.cdnsrv.jio.com/c.saavncdn.com/667/Bodyguard-2011-150x150.jpg",
+      "artist": "Tulsi Kumar",
+      "category": "podcast",
+      "artistName": "A R Rahman"
+    },
+    {
+      "id": 31,
+      "url": "../Assets/Audios/music1.mp3",
+      "name": "Devak Kalji Re",
+      "language": "hindi",
+      "img": "https://sgdccdnems04.cdnsrv.jio.com/c.saavncdn.com/461/Redu-Marathi-2017-20180502-150x150.jpg",
+      "artist": "Tulsi Kumar",
+      "category": "podcast",
+      "artistName": "Ajay Atul"
+    },
+    {
+      "id": 32,
+      "url": "../Assets/Audios/music1.mp3",
+      "name": "Main Jis Din Bhula Di",
+      "language": "hindi",
+      "img": "https://sklktecdnems06.cdnsrv.jio.com/c.saavncdn.com/947/Main-Jis-Din-Bhulaa-Du-Hindi-2021-20210210191001-150x150.jpg?bch=450419",
+      "artist": "Tulsi Kumar",
+      "category": "podcast",
+      "artistName": "A R Rahman"
+    },
+    {
+      "id": 33,
+      "url": "../Assets/Audios/music1.mp3",
+      "name": "Main Jis Din Bhula Di",
+      "language": "hindi",
+      "img": "https://sklktecdnems06.cdnsrv.jio.com/c.saavncdn.com/947/Main-Jis-Din-Bhulaa-Du-Hindi-2021-20210210191001-150x150.jpg?bch=450419",
+      "artist": "Tulsi Kumar",
+      "category": "podcast",
+      "artistName": "A R Rahman"
+    },
+    {
+      "id": 34,
+      "url": "../Assets/Audios/music1.mp3",
+      "name": "Main Jis Din Bhula Di",
+      "language": "hindi",
+      "img": "https://sklktecdnems04.cdnsrv.jio.com/c.saavncdn.com/418/Batti-Gul-Meter-Chalu-Hindi-2018-20180908134024-150x150.jpg",
+      "artist": "Tulsi Kumar",
+      "category": "podcast",
+      "artistName": "A R Rahman"
+    },
+    {
+      "id": 35,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Neenaade",
+      "language": "hindi",
+      "img": "https://sgdccdnems04.cdnsrv.jio.com/c.saavncdn.com/085/Yuvarathnaa-Kannada--Kannada-2021-20210312094439-150x150.jpg",
+      "artist": "sghoshal",
+      "category": "bollywood",
+      "artistName": "Shreya Ghoshal"
+    },
+    {
+      "id": 36,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Faded",
+      "language": "english",
+      "img": "https://sklktcdnems07.cdnsrv.jio.com/c.saavncdn.com/981/Faded-English-2015-150x150.jpg",
+      "artist": "Eminem",
+      "category": "rock",
+      "artistName": "Eminem"
+    },
+    {
+      "id": 37,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Believer-IG",
+      "language": "english",
+      "img": "https://sklktcdnems07.cdnsrv.jio.com/c.saavncdn.com/248/Evolve-English-2017-20180716230950-150x150.jpg",
+      "artist": "Ed Sheeran",
+      "category": "jazz",
+      "artistName": "Ed Sheeran"
+    },
+    {
+      "id": 38,
+      "url": "../Assets/Audios/music1.mp3",
+      "name": "Lay Ship",
+      "language": "english",
+      "img": "https://sklktecdnems04.cdnsrv.jio.com/c.saavncdn.com/270/Sheep-Alan-Walker-Relift--English-2018-20180831114031-150x150.jpg",
+      "artist": "Elton John",
+      "category": "classical",
+      "artistName": "Elton John"
+    },
+    {
+      "id": 39,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Shape Of You",
+      "language": "english",
+      "img": "https://snoidcdnems03.cdnsrv.jio.com/c.saavncdn.com/694/Shape-of-You-Single-English-2017-150x150.jpg",
+      "artist": "jayz",
+      "category": "rock",
+      "artistName": "Jay Z"
+    },
+    {
+      "id": 40,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Alone",
+      "language": "english",
+      "img": "https://snoidcdnems01.cdnsrv.jio.com/c.saavncdn.com/522/Alone-English-2017-20180131085202-150x150.jpg",
+      "artist": "jayz",
+      "category": "jazz",
+      "artistName": "Jay Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "manoja",
+      "password": "Monty@1234",
+      "name": "manoj ",
+      "email": "manojakhadmal97@gmail.com",
+      "profileUrl": "data:image/jpeg;base64,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"
+    },
+    {
+      "id": "manojaaa",
+      "password": "Manoj@123",
+      "name": "manoj",
+      "email": "manoj@gmail.com"
+    }
+  ],
+  "artists": [
+    {
+      "Artistname": "A.R.Rahman",
+      "ProfilePicture": "../Assets/Images/A.R.Rahman.png",
+      "ArtistId": "arrahman"
+    },
+    {
+      "Artistname": "Shreya Ghoshal",
+      "ProfilePicture": "../Assets/Images/ShreyaGhoshal.png",
+      "ArtistId": "sghoshal"
+    },
+    {
+      "Artistname": "Arijit Singh",
+      "ProfilePicture": "../Assets/Images/ArijitSingh.png",
+      "ArtistId": "arijitsingh"
+    },
+    {
+      "Artistname": "Jay Z",
+      "ProfilePicture": "../Assets/Images/Jay-Z.png",
+      "ArtistId": "jayz"
+    },
+    {
+      "Artistname": "Atif Aslam",
+      "ProfilePicture": "../Assets/Images/AtifAslam.png",
+      "ArtistId": "atifaslam"
+    }
+  ],
+  "newReleases": [
+    {
+      "id": 18,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Dekhte Dekhte",
+      "language": "hindi",
+      "img": "https://sklktecdnems04.cdnsrv.jio.com/c.saavncdn.com/418/Batti-Gul-Meter-Chalu-Hindi-2018-20180908134024-150x150.jpg",
+      "artist": "atifaslam",
+      "category": "bollywood",
+      "artistName": "Atif Aslam"
+    },
+    {
+      "id": 19,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Khairiyat",
+      "language": "hindi",
+      "img": "https://sklktecdnems03.cdnsrv.jio.com/c.saavncdn.com/937/Chhichhore-Hindi-2019-20190904104023-150x150.jpg",
+      "artist": "atifaslam",
+      "category": "bollywood",
+      "artistName": "Atif Aslam"
+    },
+    {
+      "id": 20,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Devak Kalji Re",
+      "language": "marathi",
+      "img": "https://sgdccdnems04.cdnsrv.jio.com/c.saavncdn.com/461/Redu-Marathi-2017-20180502-150x150.jpg",
+      "artist": "ajayatul",
+      "category": "bollywood",
+      "artistName": "Ajay Atul"
+    },
+    {
+      "id": 21,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Morya Morya",
+      "language": "marathi",
+      "img": "https://sgdccdnems02.cdnsrv.jio.com/c.saavncdn.com/673/Uladhaal-Marathi-2008-150x150.jpg",
+      "artist": "ajayatul",
+      "category": "bollywood",
+      "artistName": "Ajay Atul"
+    },
+    {
+      "id": 22,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Natarang",
+      "language": "marathi",
+      "img": "https://sklktcdnems01.cdnsrv.jio.com/c.saavncdn.com/575/Natarang-Marathi-2010-20170921053253-150x150.jpg",
+      "artist": "arrahman",
+      "category": "bollywood",
+      "artistName": "A R Rahman"
+    },
+    {
+      "id": 23,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Bedhund",
+      "language": "marathi",
+      "img": "https://sklktcdnems02.cdnsrv.jio.com/c.saavncdn.com/217/Bedhund-2003-150x150.jpg",
+      "artist": "arrahman",
+      "category": "bollywood",
+      "artistName": "A R Rahman"
+    },
+    {
+      "id": 24,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Baavre",
+      "language": "marathi",
+      "img": "https://sklktecdnems01.cdnsrv.jio.com/c.saavncdn.com/870/Dil-Bechara-Hindi-2020-20200709070438-150x150.jpg",
+      "artist": "arrahman",
+      "category": "bollywood",
+      "artistName": "A R Rahman"
+    },
+    {
+      "id": 25,
+      "url": "../Assets/Audios/music1.mp3",
+      "name": "Main Jis Din Bhula Di",
+      "language": "hindi",
+      "img": "https://sklktecdnems06.cdnsrv.jio.com/c.saavncdn.com/947/Main-Jis-Din-Bhulaa-Du-Hindi-2021-20210210191001-150x150.jpg?bch=450419",
+      "artist": "Tulsi Kumar",
+      "category": "podcast"
+    },
+    {
+      "id": 26,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Dekhte Dekhte",
+      "language": "hindi",
+      "img": "https://sklktecdnems04.cdnsrv.jio.com/c.saavncdn.com/418/Batti-Gul-Meter-Chalu-Hindi-2018-20180908134024-150x150.jpg",
+      "artist": "atifaslam",
+      "category": "bollywood",
+      "artistName": "Atif Aslam"
+    },
+    {
+      "id": 27,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Khairiyat",
+      "language": "hindi",
+      "img": "https://sklktecdnems03.cdnsrv.jio.com/c.saavncdn.com/937/Chhichhore-Hindi-2019-20190904104023-150x150.jpg",
+      "artist": "atifaslam",
+      "category": "bollywood",
+      "artistName": "Atif Aslam"
+    },
+    {
+      "id": 28,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Devak Kalji Re",
+      "language": "marathi",
+      "img": "https://sgdccdnems04.cdnsrv.jio.com/c.saavncdn.com/461/Redu-Marathi-2017-20180502-150x150.jpg",
+      "artist": "ajayatul",
+      "category": "bollywood",
+      "artistName": "Ajay Atul"
+    },
+    {
+      "id": 29,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Morya Morya",
+      "language": "marathi",
+      "img": "https://sgdccdnems02.cdnsrv.jio.com/c.saavncdn.com/673/Uladhaal-Marathi-2008-150x150.jpg",
+      "artist": "ajayatul",
+      "category": "bollywood",
+      "artistName": "Ajay Atul"
+    },
+    {
+      "id": 30,
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Natarang",
+      "language": "marathi",
+      "img": "https://sklktcdnems01.cdnsrv.jio.com/c.saavncdn.com/575/Natarang-Marathi-2010-20170921053253-150x150.jpg",
+      "artist": "arrahman",
+      "category": "bollywood",
+      "artistName": "A R Rahman"
+    }
+  ],
+  "favourite": [
+    {
+      "userid": "manoja",
+      "songid": "6",
+      "url": "../Assets/Audios/music1.mp3",
+      "name": "music1",
+      "language": "english",
+      "img": "https://img.icons8.com/color/96/000000/itunes.png",
+      "artist": "sghoshal",
+      "category": "jazz",
+      "id": 1
+    },
+    {
+      "userid": "manoja",
+      "songid": "2",
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "music2",
+      "language": "marathi",
+      "img": "https://img.icons8.com/color/96/000000/itunes.png",
+      "artist": "sghoshal",
+      "category": "podcast",
+      "id": 2
+    },
+    {
+      "userid": "manoja",
+      "songid": "9",
+      "url": "../Assets/Audios/music1.mp3",
+      "name": "Kun Faya Kun",
+      "language": "hindi",
+      "img": "https://sklktecdnems03.cdnsrv.jio.com/c.saavncdn.com/274/Rockstar-2011-150x150.jpg",
+      "artist": "arrahman",
+      "category": "bollywood",
+      "id": 3
+    },
+    {
+      "userid": "manoja",
+      "songid": "5",
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Believer-IG",
+      "language": "english",
+      "img": "https://sklktcdnems07.cdnsrv.jio.com/c.saavncdn.com/248/Evolve-English-2017-20180716230950-150x150.jpg",
+      "artist": "Ed Sheeran",
+      "category": "jazz",
+      "id": 4
+    },
+    {
+      "userid": "NarutoUz",
+      "songid": "2",
+      "url": "../Assets/Audios/music2.mp3",
+      "name": "Ghungroo",
+      "language": "hindi",
+      "img": "https://c.saavncdn.com/881/War-Hindi-2019-20191001104931-150x150.jpg",
+      "artist": "arijitsingh",
+      "category": "bollywood",
+      "id": 5
+    }
+  ]
+}

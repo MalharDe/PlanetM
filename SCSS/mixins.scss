@@ -1,0 +1,158 @@
+$singer-name-color: #A9A9A9;
+// Home page effects
+@mixin carouselEffects {
+    background-color: rgb(228, 222, 222);
+    width: 8%;
+}
+
+
+
+
+
+@mixin registerPage-outer-border {
+   
+    display: flex;
+    flex-direction: row;
+    padding: 0; 
+}
+
+@mixin registerPage-left-side {
+    
+    flex: 50%;
+    height: 100vh;
+    background-color: #514E4D;
+}
+
+
+@mixin registerPage-right-side {
+   
+    flex: 50%;
+    background-color: #F6F6F6;
+}
+
+@mixin registerPage-logo {
+    padding: 0.5rem;
+}
+
+@mixin registerPage-logo-text {
+    font-family: sans-serif;
+    color: white;
+    font-size: x-large;
+    font-weight: 100;
+}
+
+@mixin Class-registerPage-celeb-image {
+    
+    vertical-align: middle;
+    text-align: center;
+}
+
+@mixin ID-registerPage-celeb-image {
+    height: 25.56rem;
+    width: 24rem;
+}
+@mixin navBarStyles {
+    color: rgb(8, 8, 8);
+    font-size: 1.2rem;
+    font-family: "Montserrat",sans-serif;
+}
+
+// Mixins For Right Side oF Register Page
+
+@mixin registerPage-login-button {
+    float: right;
+margin: 0.3rem;
+}
+
+@mixin ID-login-text {
+    font-size: small;
+}
+
+@mixin registerPage-rightSide-text {
+    margin: 1.2rem;
+    
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: xx-large;
+}
+
+@mixin input-boxes {
+    display: flex;
+	flex-direction: column;
+	vertical-align: middle;
+	color: red;
+    font-size: 20px;
+	width: 30rem;
+	margin: auto;
+    top:0;left: 0;right: 0;bottom: 0;
+}
+
+@mixin form-control {
+    border-radius: 1.5rem;
+	border-style: solid;
+    height: 3rem;
+}
+
+@mixin btn-block {
+    border-radius: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+// mixin for Sections like Artist-Section, Podcast-section etc....
+
+@mixin xxxx-section {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+padding-top: 1rem;
+//justify-content: flex-start;
+align-items: flex-start;
+}
+
+// mixin for audio player
+$bg-main-color: radial-gradient(#270e2d,#00d4ff);
+@mixin pos($position,$width){
+    position: $position;
+    width: $width;
+}
+
+// User Profile 
+@mixin profileImg {
+    clip-path: circle();
+        width: 100%;
+        height: 100%;
+        float: right;
+        object-fit: cover;
+        border-radius: 50%;
+}
+
+// font size
+@mixin fontstylename{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+
+}
+@mixin fontStyle {
+    font: {
+        size: 3.2rem;
+        weight:500px;
+    } 
+}
+@mixin greyShades {
+    color: #d6d6d6;
+}
+@mixin hoverEffects {
+    color: rgb(82, 185, 226);
+    cursor: pointer;
+}
+@mixin Userinputs {
+    width: 90%;
+    margin: 0px;
+}
+@mixin removeEffects {
+    text-decoration: none;
+}
+@mixin visitedLink {
+    background-color: rgb(21, 99, 151);
+}

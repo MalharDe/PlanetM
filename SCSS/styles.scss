@@ -1,0 +1,1207 @@
+@import "mixins.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap');
+
+// Styles for search bar on Home Page
+input[type="search"]
+{
+    border-radius: 0.8rem;
+    height: 2.5rem;
+    width: 10rem;
+    float: left;
+    text-align: left;
+}
+
+#backgroundImage
+{
+    width: 100vw;
+    height: 100vh;
+}
+
+.login, .signup
+{
+    list-style: none;
+}
+
+#modalButton
+{
+    display: none;
+}
+
+
+//style for user profile at nav bar
+.profile-div-nav{
+    width: 2.5rem;
+}
+
+
+.profile-div-nav .user-profile-nav{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+
+}
+
+// Home page nav bar styles..................
+nav{
+    // box-shadow: 1px 2px 4px rgb(99, 93, 93);
+    background-color:#ffffff;
+    height: 4.2rem;
+    box-sizing: border-box;
+    font-family: "Montserrat",sans-serif;
+    border-bottom: 1px solid rgba(179, 176, 176,0.2);
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link ,.navbar-light .navbar-brand,.navbar-light .navbar-nav .nav-link
+    {
+    @include navBarStyles();
+}
+
+.navbar-collapse ul li a{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    transition: all 0.3s ease 0s;
+ 
+
+}
+.navbar-collapse ul li a:hover{
+   background-color: #04054b;
+
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #FFFFFF;
+    transition: all 0.3s ease 0s;
+ 
+}
+.navbar-collapse ul li a:after{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '.';
+    color: transparent;
+    background: #0b1652b4;
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+}
+.navbar-collapse ul li a:hover:after{
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+}
+
+// dropdown nav
+.dropdown-nav{
+    width: 1rem;
+}
+
+// Toggle button at nav bar
+.toggle-button{
+    width: 1rem;
+    height: 1.5rem;
+    background-color: #a8a8a8;
+    padding: 0;
+}
+
+// Toggle button at settings page
+.settings-dropdown-nav{
+    width: 1rem;
+}
+.settings-toggle-button .btn{
+    width: 1rem;
+    height: 1.5rem;
+    background-color: #fcf4f4;
+    padding: 0;
+}
+
+//----------------------        Main Page       -----------------
+.main-page
+{
+    display: flex;
+    margin-top: 2px;
+    background-color: #fffbfb;
+}
+
+.library-sub-title1
+{
+    box-sizing: border-box;
+    font-size: x-large;
+    margin-left: 2rem;
+    padding: 0.2rem;
+    font-style: unset;
+    margin-bottom:0 ;
+    font-weight: 600;
+    color: #180707;
+    margin-top: 1rem;
+}
+//-------------------------     Left Side Styles        ---------------
+
+
+.music-library
+{
+    color: rgb(121, 122, 124);
+    font-size: medium;
+}
+
+.left-side
+{
+    border-right: 1px solid rgb(212, 212, 208);
+    float: left;
+    flex: 15%;
+    height: auto;
+}
+
+.left-side-list
+{
+    margin-top: 2rem;
+    list-style-type: none;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: bolder;
+    padding: 0;
+}
+.left-side-list .music-library{
+    font-size: 1.5rem;
+    font-style: normal;
+}
+
+ul li:not(:last-child) 
+{
+    margin-bottom: 1rem;
+}
+
+.left-side-list-item
+{
+    display: inline-flex;
+    line-height: 0.9rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.italics-title
+{
+    padding-top: 0.5rem;
+}
+
+.left-side-image
+{
+    width: 1.9rem;
+    height: 1.9rem;
+    margin-right: 0.4rem;
+}
+
+#left-sideFavourites
+{
+    position: relative;
+    top: -1.2rem;
+}
+// ----------------------       Main Content Styles     ----------------------------
+
+
+.main-content
+{
+    flex: 85%;
+    // flex-wrap: wrap;
+    // border: 1px solid red;
+    // flex-direction: row;
+
+}
+
+.inside-main-content
+{
+    display: flex;
+    margin: 3px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: start;
+
+}
+
+.resource-box
+{
+    height: auto;
+    width: 9rem;
+    max-height: 45%;
+    text-align: left;
+    line-height: 1rem;
+    background-color: #fffbfb;
+    font-family: sans-serif;
+    font-size: small;
+    text-overflow: ellipsis;
+    margin: 1rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    flex-direction: row;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    
+}
+
+.resource-box:hover{
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.2);
+}
+
+.song-title
+{
+    padding-left: 0.3rem;
+    padding-bottom: 0.2rem;
+    border-radius: 0.6rem;
+}
+
+.resource-box p
+{
+    color: $singer-name-color;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+// .carousel-inner .carousel-control-next:hover,.carousel-inner .carousel-control-prev:hover{
+//   @include carouselEffects();
+// }
+
+
+.song-image
+{
+    // border: 2px solid blueviolet;
+    // border-bottom: 1px solid rgb(0, 215, 253);
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+    height: 7rem;
+    border-radius: 0.6rem;
+    border-bottom-right-radius:0 ;
+    border-bottom-left-radius: 0;
+    width: 100%;
+    border-bottom-style: soild;
+}
+
+
+//  ----------------------------    Register Page Styles Starts    --------------------------
+
+.registerPage-outer-border, .loginPage-outer-border
+{
+    @include registerPage-outer-border;
+}
+
+.registerPage-left-side, .loginPage-left-side
+{
+    @include registerPage-left-side();
+}
+
+.registerPage-right-side, .loginPage-right-side
+{
+    @include registerPage-right-side();
+}
+
+.registerPage-logo, .loginPage-logo
+{
+    @include registerPage-logo();
+}
+
+.registerPage-logo-text, .loginPage-logo-text
+{
+    @include registerPage-logo-text();
+}
+
+.registerPage-celeb-image, .loginPage-celeb-image
+{
+    @include Class-registerPage-celeb-image();
+}
+
+#registerPage-celeb-image, #loginPage-celeb-image
+{
+    @include ID-registerPage-celeb-image();
+}
+
+@mixin RegisterPage-fontStyle {
+    text-align: center;
+    display: block;
+    font-size: 2rem;
+}
+
+// "div h2" is not having a mixin
+div h2
+{
+    @include RegisterPage-fontStyle();
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+// "div em" is not having a mixin
+div em
+{
+    font-weight: 500;
+    @include RegisterPage-fontStyle();
+    color: #928e8c;
+    font-size: x-large;
+    font-family: sans-serif;
+}
+
+
+// Styles for Right Side of Register Page
+
+
+.registerPage-login-button, .loginPage-login-button
+{
+    @include registerPage-login-button();
+}
+
+#login-text
+{
+    @include ID-login-text();
+}
+
+.registerPage-rightSide-text, .loginPage-rightSide-text
+{
+    @include registerPage-rightSide-text();
+}
+
+.input-boxes
+{
+    @include input-boxes();
+}
+
+// Not having a mixin
+.input-boxes p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    text-align: center;
+    color: #0056C2;
+}
+
+@mixin InputBoxStyle 
+{
+	width: 30rem;	
+	height: 3rem;
+	border-width: 0.01rem;
+	text-align: center;
+	color: black
+}
+
+input
+{
+	@include InputBoxStyle();
+}
+
+.form-control
+{
+    @include form-control();
+}
+
+// Not having a mixin
+input:focus { 
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 0.3rem #719ECE;
+}
+
+// Not having a mixin
+textarea:focus { 
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 0.3rem #719ECE;
+}
+
+.btn-block
+{
+    @include btn-block();
+}
+
+//  ----------------------------    Register Page Styles Ends    ----------------------------
+
+//  ----------------------------    Login Page Style Starts      --------------------------
+
+
+// NOTE: The styles of Login Page are same as Register Page therefore mixins of "Register Page" are used.
+
+
+// Styles for Right Side of Login Page
+
+.btn-block
+{
+    @include btn-block();
+}
+
+//--------------------------------      Login Page Style Ends       --------------------------
+
+
+
+/*validation for registration and log in */
+$Error-border-color: rgb(230, 7, 7);
+$Success-border-color: #44f321;
+.error{
+	display: none;
+	margin-left: 10px;
+}		
+
+
+.error_show{
+	color: $Error-border-color;
+	margin-left: 10px;
+}
+#userId.invalid, #userPassword.invalid, #name.invalid, #email.invalid, #confirmPassword.invalid{
+    box-shadow: none;
+    outline: $Error-border-color;
+	border: 0.01rem solid  $Error-border-color;
+}
+
+
+// input.valid, textarea.valid{
+// 	 border: 0.01rem solid $Success-border-color;
+//     //box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem #5BFF3B;
+// }
+
+.error
+{
+    font-size: small;
+    line-height: 01rem;
+}
+
+//  -------------------------       Styles For Artists Start from here      ---------------------
+
+#artists-section, #Podcasts-section
+{
+    @include xxxx-section();
+}
+
+.artist-image
+{
+    // border: 1px solid red;
+    flex-direction: row;
+    height: 7rem;
+    width: 7rem;
+    // background-color: #182032;
+    // background-color: #514E4D;
+    background-color: #714060;
+    border-radius: 5rem;
+    margin-left: 3rem;
+}
+
+.artist-box, .artist-name
+{
+    // border: 2px solid green;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.artist-box
+{
+    // border: 1px solid brown;
+    color: #D076B1;
+    margin-bottom: 1rem;
+}
+
+.artist-box .artist-image:hover,.artist-box .artist-name:hover
+{
+   // box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.2);
+}
+
+.artist-name
+{
+    cursor: pointer;
+    color: #180707;
+    font-weight: 500;
+    padding-left: 2.6rem;
+    
+}
+
+//  ----------------        Styles For Podcasts Start From Here     -----------------
+#Podcasts-section, #artists-page, #newRelease-section
+{
+    @include xxxx-section();
+    justify-content: start;
+    padding: 0;
+}
+
+
+
+//---------style for audio player----//
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background:$bg-main-color;
+    overflow: hidden;
+}
+
+.player{
+   @include pos(relative,400px );
+    background: whitesmoke;
+    box-shadow: 0 50px 80px rgba(0,0,0,0.75);
+    overflow: hidden;
+    .imgbox{
+       @include pos(relative,100%);
+       height:350px;
+       img{
+           @include pos(absolute,100%);
+           height:100%;
+           object-fit: cover;
+           top: 0;
+      }
+     }
+    audio{
+       top:0;
+       width: 100%;
+       outline: none;
+     }
+    .control{
+        margin:20px;
+        padding-left: 4rem;
+    }
+}
+
+ //---------------------------------STARTING User Profile container -------------------------------------//
+    .container{
+        align-items: center;
+        overflow: hidden;
+    }
+    //------------Profile Image --------//
+.profile-img{
+        width: 120px;
+        height: 120px;;
+        border-radius:50%; 
+        float: right;
+        filter: drop-shadow(5px 5px 5px black);
+    }
+    
+    //------------Profile Image --------//
+.profile-img img{
+        @include profileImg();
+    }
+    
+.custom-file input[type='file']{
+        display: none;
+    }
+    .custom-file label{
+        cursor: pointer;
+        float: right;
+        margin-top: 15px;
+        margin-right: 10px;
+    }  
+.profile-name{ 
+        display: flexbox;
+        float: left;
+        margin-top: 1rem;
+        height: 120px;
+        .name{
+                text-transform: capitalize;
+                @include fontstylename();
+                float: bottom;
+             }
+       
+}
+    //aligning the left panel of user profile
+.v1{
+    border-left: 2px solid lightseagreen;
+    height: 95%;
+    position: absolute;
+    left:20rem;
+    margin-left: 1em;
+    top:10px
+}
+.hr1{
+    width:50%;
+    margin-left:0%;
+}
+.left-content{
+       text-align: justify;
+        margin-left: 10px;
+    }
+    
+.left-content h3{
+        font-weight: 100;
+        line-height: 2.1;
+        color: black;
+    }
+    // giving hover effect to the options on left panel of user profile 
+.left-content .change-pwd:hover ,.side-bar:hover{
+    @include hoverEffects();
+}
+.left-content a:active {
+     h3{
+          color: lightblue;
+       }
+}
+
+.left-content a{
+    @include removeEffects();
+}
+.right-content{
+       left: -120px; 
+}
+     // setting size of labels in user profile
+label{
+        font-size: 1.5rem;
+    
+    }
+ 
+    // input tag manipulation of profile
+.right-content input[type=number],input[type=password],input[type=text]{
+      @include Userinputs();
+      border-radius: 1rem;
+      padding: 1.5em;
+      border-color: grey;
+      text-align: left;
+    }
+.left-content a:visited{
+    @include visitedLink();
+}
+
+
+// for hiding and showing div
+#passwordDiv{
+    display: none;
+}
+    /////--------------- END of User Profile -----------//////
+
+//  -----------------------     styles for temp.html starts from here   -------------------------
+
+//  ----------------------      Styles for Song Player Page     ------------------
+
+.songPage-main-content
+{
+    display: flex;
+    margin: 0.5rem;
+    position: relative;
+    top: -1rem;
+    left: -1rem;
+}
+
+
+
+.songPage-right-side
+{
+    flex: 90%;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+#songPage-image
+{
+    border: 0.5rem;
+    background-color: lightcoral;
+    width: 11rem;
+    height: 11rem;
+    position: relative;
+    top: 0.5rem;
+    left: 0.5rem;
+
+}
+
+.songPage-text-div
+{
+    margin-left: 2.5rem;
+}
+
+.songPage-audio-player
+{
+    display: flex;
+    max-height: 4.95rem;
+    background-color: #F6F6F6;
+    width: 100%;
+    position: relative;
+    bottom: -1.4rem;
+}
+
+.songPage-songPlayer-songDetails
+{
+        flex: 25%;
+        vertical-align: middle;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0.5rem;
+}
+.songPage-audio-player-songImage
+{
+    display: inline-flex;
+    margin-top: 0.7rem;
+}
+
+.songPage-audio-player-songImage img{
+    width: 3rem;
+    height: 3.5rem;
+
+}
+
+#songPlayer-song-title
+{
+    float: left;
+    padding-left: 0.2rem;
+}
+
+.songPage-audio-player-controls
+{
+    padding: 0;
+    flex: 50%;
+    text-align: center;
+}
+
+.song-controls-list
+{
+    padding: 0;
+    margin-top: 1.3rem;
+    display: inline-flex;
+}
+
+
+.song-controls-list img{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 2.5rem;
+    cursor: pointer;
+}
+
+
+#pausebtn
+{
+    display: none;
+}
+
+.songPage-audio-player-rightside
+{
+    flex: 25%;
+    text-align: center;
+ 
+}
+
+#volume-mute-button, #volume-up-button, #downloadbtn {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: 1.3rem;
+  }
+
+#volume-mute-button
+{
+    display: none;
+}
+
+#display-for-song-playlist
+{
+    @include xxxx-section();
+    justify-content: flex-start;
+
+}
+
+.volumebtn
+{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 2.5rem;
+    cursor: pointer;
+}
+
+//-------------------------Audio player progress bar------------------------//
+.progress{
+    position: absolute;
+    background-color: #429842;
+    height: 100%;
+    width: 0%;
+    border-radius:4rem;
+    cursor: pointer;
+
+    transition: width is linear;
+    -o-transition: width is linear;
+    -moz-transition: width is linear;
+    -webkit-transition: width is linear;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.progress_duration_meter{
+    display: flex;
+    //justify-content: space-between;
+    margin-top: 0.7rem;
+    position: relative;
+    bottom: -1.4rem;
+}
+
+#current_time
+{
+    margin-left: 0.2rem;
+}
+
+#duration
+{
+    margin-right: 0.4rem;
+}
+.progressbar_container{
+    width: 100%;
+    height: auto;
+
+}
+
+.progress_div{
+    width: 100%;
+    height: 0.3rem;
+    border-radius: 1rem;
+    position: relative;
+     bottom: -1.4rem;
+    transition: width is linear;
+    -o-transition: width is linear;
+    -moz-transition: width is linear;
+    -webkit-transition: width is linear;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #E4E4E4;
+}
+
+//  --------    Media Queries for Song Page     -----------
+
+@media (max-width:940px) and (min-width: 500px)
+{
+    .songPage-audio-player
+    {
+        position:relative;
+        bottom: -10.5rem; 
+    }
+
+    .progress_duration_meter
+    {
+        position: relative;
+        bottom: -10.5rem;
+    }
+
+    .progress_div
+    {
+        position: relative;
+        bottom: -10.5rem;
+    }
+    
+  img#songPage-image {
+    height: 8rem;
+    width: 8rem;
+  }
+  .resource-box {
+    margin: 0.5rem;
+    width: 7rem;
+  }
+  #display-for-song-playlist {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 200px;
+            flex: 1 1 200px;
+    -webkit-column-count: 1;
+            column-count: 1;
+    overflow: hidden;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .songPage-text-div {
+    margin-left: 1rem;
+  }
+  .song-controls-list img {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 0px;
+  }
+  #fastbackwarddbtn {
+    margin: 0;
+  }
+  #volume-up-button {
+    margin: 0;
+  }
+  #downloadbtn {
+    margin-top: 0;
+  }
+  .songPage-audio-player-rightside {
+    margin-top: 1.29rem;
+    margin-left: 2.5rem;
+  }
+}
+@media (max-width:500px){
+     //---------------------------------STARTING User Profile container -------------------------------------//
+
+ 
+ 
+    .custom-file label{
+        margin-top:2px;
+        margin-right: 2px;
+    }  
+
+.v1{
+    
+    height: 95%;
+    position: absolute;
+    left:58%;
+    margin-left: 3px;
+    top:1px
+}
+.hr1{
+    width:0px;;
+    margin-left:0%;
+}
+.left-content{
+        text-align: justify;
+        display: flex;
+        direction: row;
+        margin-left: 0px;
+        font-size: 1.5rem;
+}
+    .h3, h3 {
+    font-size: 1.5rem;
+}
+    
+.left-content h3{
+        font-weight: 10;
+        line-height: 1;
+        color: black;
+        font-size:1.5rem;
+    }
+
+    .right-content{
+        left: none;
+        width: 50%;
+        left: 30%;
+        align-content: center;
+    }
+
+}
+
+
+/* Profile Pic */
+
+.profile-images-card{
+
+    margin: 0px;
+    display: table;
+    background: #fff;
+    padding: 0px;
+    box-shadow: 0px 0px 5x #ddd;
+
+
+  }
+  
+  .profile-images{
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .profile-images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .custome-file input[type='file']
+  {
+    display: none;
+  }
+  
+  .custome-file label{
+    cursor: pointer;
+    color: #000;
+    text-align: center;
+    display: table;
+    margin-top: 15px;
+  }
+  
+  // ----------------         Styles For Carousal     --------------------
+.carousel-control-prev {
+    left: -0.3rem;
+    //background-color: aquamarine;
+    width: 0.9rem;
+}
+
+.carousel-control-prev-icon {
+background-image: url(https://img.icons8.com/ios-filled/50/000000/back.png);
+width: 3rem;
+height: 1rem;}
+
+.carousel-control-next {
+    right: 2.5rem;
+    width: 0.9rem;
+    //background-color: aquamarine;
+}
+
+.carousel-control-next-icon {
+background-image: url(https://img.icons8.com/ios-filled/50/000000/forward--v1.png);
+width: 3rem;
+height: 1rem;}
+
+//  ------------------    Carousla Styles End     --------------------
+  
+.profileImage {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: #0c0c0c;
+    font-size: 0.8rem;
+    color: rgb(245, 238, 238);
+    text-align: center;
+    line-height: 2rem;
+    margin-right: 25px;
+    img{
+      border-radius: 2rem;
+      width: 2rem;
+      height: 2rem;
+      margin-bottom: 0.2rem;
+    }
+  
+  }
+  .dropdown {
+    span {
+      color: rgb(8, 8, 8);
+      font-size: 1.2rem;
+      font-family: "Montserrat", sans-serif;
+    }
+    margin-top: 8px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    text-align: left;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 6rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding-top: 12px;
+    margin-top: 12px;
+    padding-left: 15px;
+    z-index: 1;
+    height: 6.5rem;
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+  
+    a {
+      color: #000;
+    }
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  //   for menu
+  
+  .menu-dropdown {
+    img {
+      margin-bottom: 6px;
+      color: rgb(8, 8, 8);
+      font-size: 1.2rem;
+      font-family: "Montserrat", sans-serif;
+    }
+    margin-top: 8px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .menu-content {
+    text-align: left;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 9rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding-top: 15px;
+    margin-top: 12px;
+    z-index: 1;
+    height: 5rem;
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+  
+    right: 4px;
+    left: auto;
+    a {
+      padding-left: 18px;
+      padding-right: 10px;
+      color: #000;
+    }
+  }
+  
+  .menu-dropdown:hover .menu-content {
+    display: block;
+  }
+  
+
+
+/* ------------------Account Settings------------- */
+.vertical-nav {
+    min-width: 17rem;
+    width: 17rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+    margin-top: 3.5rem;
+  }
+  
+  .page-content {
+    width: calc(100% - 17rem);
+    margin-left: 17rem;
+    transition: all 0.4s;
+  }
+  
+  /* for toggle behavior */
+  
+  #sidebar.active {
+    margin-left: -17rem;
+  }
+  
+  #content.active {
+    width: 100%;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    #sidebar {
+      margin-left: -17rem;
+    }
+    #sidebar.active {
+      margin-left: 0;
+    }
+    #content {
+      width: 100%;
+      margin: 0;
+    }
+    #content.active {
+      margin-left: 17rem;
+      width: calc(100% - 17rem);
+    }
+  }
+  body {
+    background: #f8f8f9;
+   
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  .separator {
+    margin: 2rem 0;
+    border-bottom: 1px dashed #fff;
+  }
+  
+  .text-uppercase {
+    letter-spacing: 0.1em;
+  }
+  
+  .text-gray {
+    color: #aaa;
+  }

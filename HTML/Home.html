@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <script src="../JS/script.js"></script>
+  <link rel="stylesheet" href="../SCSS/styles.css">
+
+  <title>NewHome Page</title>
+</head>
+<!-- color for kishor kumar #514E4D 
+  Jay-Z color #151F24-->
+
+<body>
+  <!-- -------------------    Navbar Starts   ------------------------------------ -->
+
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <a class="navbar-brand" href="#">
+      <img src="https://img.icons8.com/cute-clipart/128/000000/music.png" width="30" height="30"
+        class="d-inline-block align-top" alt="">
+      PlanetM
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="./Home.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <div class="dropdown">
+          <span>Languages</span>
+          <div class="dropdown-content">
+            <a id="english" href="#">English</a>
+            <a id="marathi" href="#">Marathi</a>
+            <a id="hindi" href="#">Hindi</a>
+          </div>
+        </div>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" id="searchkey">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <div class="profileImage"></div>
+        <div class="menu-dropdown">
+          <img src="../Assets/Images/menu.jfif" alt="">
+          <div class="menu-content">
+            <a href="settings.html">Edit Profile</a>
+            <a href="Login.html" id="login">Login</a>
+            <a onclick="Logout()" id="logout" href="#">Logout</a>
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+  </nav>
+
+  <!--  The main-page class covers the whole page(Left-side + main-content + right-side) except
+    Navbar
+  -->
+  <div class="main-page">
+
+    <!-- ------------------------   Left Side Content    -------------------------------- -->
+
+
+
+    <div class="left-side">
+
+      <ul class="left-side-list">
+             <i class="music-library">Library</i>
+                <br> <br>
+
+        <li>
+          <span class="left-side-list-item">
+            <img class="left-side-image" src="https://img.icons8.com/nolan/64/positive-dynamic.png" alt="">
+            <i class="italics-title"> <a href="#trendingNow">Trending Now</a></i>
+          </span>
+        </li>
+        <li>
+          <span class="left-side-list-item">
+            <img class="left-side-image" src="https://img.icons8.com/nolan/64/musical-notes.png" alt="">
+            <i class="italics-title"> <a href="#newRelease">New Releases</a> </i>
+          </span>
+        </li>
+
+        <!-- <li>
+          <span class="left-side-list-item">
+            <img class="left-side-image" src="https://img.icons8.com/nolan/64/music-record.png" alt="">
+            <i class="italics-title">Evergreen Hits</i>
+          </span>
+        </li> -->
+
+        <li>
+          <span class="left-side-list-item">
+            <img class="left-side-image" src="https://img.icons8.com/nolan/64/browse-podcasts.png" alt="">
+            <i class="italics-title"><a href="#Podcasts">Podcasts</a></i>
+          </span>
+        </li>
+
+        <li>
+          <span class="left-side-list-item">
+            <img class="left-side-image" src="https://img.icons8.com/nolan/64/micro.png" alt="">
+            <i class="italics-title"> <a href="#artists">Artists</a></i>
+          </span>
+        </li>
+           
+        <li>
+          <span class="left-side-list-item" id="left-sideFavourites">
+            <img class="left-side-image" src="https://img.icons8.com/nolan/64/likes-folder.png" alt="">
+            <i class="italics-title"> <a href="#favourites">My Favourites</a></i>
+          </span>
+        </li>         
+      </ul>
+              
+    </div>
+
+
+
+    <!-- ------------------------   Main Content    -------------------------------- -->
+    <div class="main-content">
+      <p class="library-sub-title1">Trending Now</p>
+
+      <div class="container">
+        <div id="slideshow" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner treading-carousel">
+
+            <a href="#slideshow" class="carousel-control-prev" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a href="#slideshow" class="carousel-control-next" role="button" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <!-- <p id="artists" class="library-sub-title1">Artists</p>
+    <div>
+      <div class="art" id="artists-section"> 
+        
+      </div>
+    </div> -->
+
+      <!-- <p id="favourites" class="library-sub-title1">Favourites</p>
+    <div>
+
+      <div class="art" id="favourites-section"> 
+
+        
+      </div> -->
+      <!-- </div> -->
+    <!-- </div> -->
+
+   
+    <p id="newRelease" class="library-sub-title1">New Releases</p>
+
+    <div class="container">
+      <div id="slideshow1" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner carousel-releases">
+
+          <a href="#slideshow1" class="carousel-control-prev" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a href="#slideshow1" class="carousel-control-next" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+
+     
+      <p id="Podcasts" class="library-sub-title1">Podcasts</p>
+      <div class="container">
+        <div id="slideshow2" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner podcasts">
+
+            <a href="#slideshow2" class="carousel-control-prev" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a href="#slideshow2" class="carousel-control-next" role="button" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+        <p id="artists" class="library-sub-title1">Artists</p>
+
+        <div class="container">
+          <div id="slideshow2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner carousel-artists">
+
+              <a href="#slideshow2" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a href="#slideshow3" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+
+        <!-- ------------------------   Right Side Content    -------------------------------- -->
+
+        <aside class="right-side"></aside>
+
+
+</body>
+
+</html>

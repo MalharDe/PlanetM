@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <script src="../JS/script.js"></script>
+    <link rel="stylesheet" href="../SCSS/styles.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Register</title>
+</head>
+
+<body>
+    <!-- The class "registerPage-outer-border" is for the outermost border of the page -->
+    <div class="container-fluid registerPage-outer-border">
+
+        <!-- The class "registerPage-left-side" is for left side of register page -->
+        <div class="registerPage-left-side d-none d-md-block d-lg-block d-xl-block">
+
+            <!-- The class "registerPage-logo" is for LOGO present on register page -->
+            <div class="registerPage-logo">
+                <a class="navbar-brand registerPage-logo-text" href="./LandingPage.html">
+                    <img id="registerPage-logo-image" src="../Assets/Images/logo.jpg" width="40" height="40"
+                        class="d-inline-block align-top" alt="">
+                    PlanetM
+                </a>
+            </div>
+
+
+            <!-- The class "registerPage-celeb-image" is for Celebrity image present on register page -->
+            <div class="registerPage-celeb-image">
+
+                <!-- NOTE: The id and class are having the same name -->
+                <img id="registerPage-celeb-image" src="../Assets/Images/KishoreKumar.png" alt="KishoreKumar_image">
+            </div>
+
+
+            <div class="registerPage-decorative-text">
+                <h2>All Your Music.</h2>
+                <em>Anytime, Anywhere.</em>
+            </div>
+
+        </div>
+
+
+        <!-- The class "registerPage-right-side" is for right side of register page -->
+        <div class="registerPage-right-side">
+
+            <div class="registerPage-login-button">
+                <span id="login-text">Already have an account ? <a href="./Login.html"
+                        class="btn btn-success btn-sm btn-outline rounded-pill">Login</a></span>
+            </div>
+
+            <br>
+            <!-- Right Side Top text  -->
+            <div class="registerPage-rightSide-text">
+                <p>Welcome To PlanetM</p>
+            </div>
+        
+        <form action="#">
+
+            <div class="input-boxes">
+                <p>Sign Up</p>
+
+
+                <div class="input-group mb-3">
+                    *&nbsp;<input class="form-control" id="name"  type="text" placeholder="Enter Name" required autofocus>
+                </div>
+                <span class="error" id="fname"><sup>*</sup>Name require at least 3 letter</span>
+                <br>
+                <div class="input-group mb-3">
+                    *&nbsp;<input class="form-control" id="email" type="text" placeholder="Enter Email Address" required>
+                </div>
+                <span class="error" id="mail"><sup>*</sup>Please Enter Email in proper format eg.xxx@gmail.com</span>
+                <br>
+                <div class="input-group mb-3">
+                    *&nbsp;<input class="form-control" id="userId" type="text" placeholder="Enter User Id" required>
+                </div>
+                <span class="error" id="username"><sup>*</sup>Userid must contain at least 5 letter</span>
+                <br>
+                <div class="input-group mb-3">
+                    *&nbsp;<input class="form-control" id="userPassword" type="password" placeholder="Enter Password" required>
+                </div>
+                <span class="error" id="password"><sup>*</sup>Password must contain at least one Capital,one small , one special symbol and one number </span>
+                <br>
+                <div class="input-group mb-3">
+                    *&nbsp;<input class="form-control" id="confirmPassword" type="password" placeholder="Enter Confirm Password" required>
+                </div>
+
+                <button id="registrationbtn" type="submit" class="btn btn-success btn-lg btn-block">Register</button>
+            </div>
+        
+        </form>
+        </div>
+</body>
+
+</html>
